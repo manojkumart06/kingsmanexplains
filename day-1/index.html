@@ -1,108 +1,419 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Day 1: AI vs Machine Learning vs Deep Learning vs Generative AI · Kingsman Explains</title>
-<meta name="description" content="Four terms everyone mixes up, explained in one picture.">
-<meta property="og:title" content="Day 1: AI vs Machine Learning vs Deep Learning vs Generative AI · Kingsman Explains">
-<meta property="og:description" content="Four terms everyone mixes up, explained in one picture.">
+<title>Day 1: Fundamentals of Artificial Intelligence · Kingsman Explains</title>
+<meta name="description" content="AI, Machine Learning (3 types), Deep Learning, Generative AI and LLMs, explained simply.">
+<meta property="og:title" content="Day 1: Fundamentals of Artificial Intelligence · Kingsman Explains">
+<meta property="og:description" content="AI, Machine Learning (3 types), Deep Learning, Generative AI and LLMs, explained simply.">
 <meta property="og:image" content="../assets/kingsman.png">
 <link rel="icon" href="../assets/kingsman.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css"></head><body><div class="wrap">
 <header class="top"><img src="../assets/kingsman.png" alt=""><a class="brand" href="../index.html">Kingsman Explains</a>
 <nav><a href="../plan/index.html">90-day plan</a><a href="https://www.instagram.com/kingsmanexplains/">Instagram</a></nav></header>
-<div class="kicker">Day 1 of 90 · Notes</div><h1>AI vs Machine Learning vs Deep Learning vs Generative AI</h1>
-<p class="lead">Four terms everyone mixes up, explained in one picture.</p>
-<h2>The one-picture summary</h2>
-<p>Think of four circles, one inside the other:</p>
+<div class="kicker">Day 1 of 90 · Notes</div><h1>Fundamentals of Artificial Intelligence</h1>
+<p class="lead">AI, Machine Learning (3 types), Deep Learning, Generative AI and LLMs, explained simply.</p>
+<h2>1. What is Artificial Intelligence (AI)?</h2>
+<p><strong>Definition:</strong></p>
+<p>Artificial Intelligence (AI) is a branch of computer science that enables machines to perform tasks that normally require human intelligence, such as learning, problem-solving, decision-making, understanding language and recognising images.</p>
+<p><strong>Examples:</strong></p>
+<ol>
+<li>Voice assistants such as Siri.</li>
+<li>Chatbots such as ChatGPT.</li>
+<li>Facial recognition systems.</li>
+<li>Recommendation systems.</li>
+<li>Self-driving vehicle technology.</li>
+</ol>
+<p><strong>Applications of AI:</strong></p>
+<ul>
+<li>Healthcare</li>
+<li>Banking</li>
+<li>Education</li>
+<li>Agriculture</li>
+<li>Transportation</li>
+<li>E-commerce</li>
+<li>Customer service</li>
+</ul>
+<h2>2. What is Traditional Programming?</h2>
+<p>Traditional programming is an approach in which developers write specific instructions and rules for a computer to follow.</p>
+<p><strong>Example:</strong></p>
+<p>Imagine a developer wants to identify whether a customer is eligible for a discount. The developer writes a condition:</p>
+<pre><code class="language-javascript">if (purchaseAmount &gt;= 5000) {
+    discount = 10;
+} else {
+    discount = 0;
+}
+</code></pre>
+<p>The computer follows the rules written by the developer.</p>
+<p><strong>Basic working process:</strong></p>
+<blockquote>
+<p>Input + Instructions/Rules → Output</p>
+</blockquote>
+<h2>3. What is Machine Learning (ML)?</h2>
+<p><strong>Definition:</strong></p>
+<p>Machine Learning is a subfield of Artificial Intelligence that enables computers to learn patterns from input data and make predictions or decisions without being explicitly programmed with every rule.</p>
+<p>In Machine Learning, an algorithm learns patterns from data and produces a trained model.</p>
+<p><strong>Example: Email Spam Detection</strong></p>
+<p>Imagine we have 1,000 emails. Some emails are labelled as spam, while others are labelled as normal.</p>
+<p>The Machine Learning model studies these examples and learns patterns associated with spam emails. When a new email arrives, the trained model predicts whether it is spam or not.</p>
+<h3>How Machine Learning works</h3>
+<ol>
+<li><strong>Data Collection:</strong> Collect relevant information.</li>
+<li><strong>Data Preparation:</strong> Clean and organise the collected data.</li>
+<li><strong>Model Training:</strong> Feed the data into an algorithm so it can learn patterns.</li>
+<li><strong>Model Evaluation:</strong> Test the model to understand how accurately it performs.</li>
+<li><strong>Prediction:</strong> Use the trained model to make predictions on new data.</li>
+</ol>
+<h3>Important Machine Learning terminology</h3>
+<ul>
+<li><strong>Dataset:</strong> A collection of data used for training, validation or testing.</li>
+<li><strong>Algorithm:</strong> A mathematical method or procedure used to learn patterns from data.</li>
+<li><strong>Model:</strong> The result of training an algorithm using data. It can be used to make predictions.</li>
+<li><strong>Training:</strong> The process through which a model learns patterns from data.</li>
+<li><strong>Prediction:</strong> The output generated by a trained model for new input data.</li>
+<li><strong>Testing:</strong> Evaluating the model using data that was not used to train it.</li>
+</ul>
+<h2>4. Types of Machine Learning</h2>
+<p>There are three major types of Machine Learning:</p>
+<h3>A. Supervised Learning</h3>
+<p><strong>Definition:</strong></p>
+<p>Supervised Learning is a type of Machine Learning in which a model learns from labelled data. The training data contains examples along with their correct answers.</p>
+<p>The model learns relationships between inputs and known outputs and uses them to predict answers for new data.</p>
+<p><strong>Example: Email Spam Detection</strong></p>
+<table>
+<thead>
+<tr>
+<th>Email</th>
+<th>Label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Win a free iPhone!</td>
+<td>Spam</td>
+</tr>
+<tr>
+<td>Your bank statement</td>
+<td>Not Spam</td>
+</tr>
+<tr>
+<td>Claim your prize!</td>
+<td>Spam</td>
+</tr>
+<tr>
+<td>Meeting at 10 AM</td>
+<td>Not Spam</td>
+</tr>
+</tbody>
+</table>
+<p>The model learns from these labelled examples and predicts the category of a new email.</p>
+<p><strong>Two common types of Supervised Learning:</strong></p>
+<ol>
+<li><strong>Classification:</strong> Predicts a category or class.<ul>
+<li>Spam or Not Spam.</li>
+<li>Fraudulent or Genuine.</li>
+<li>Cat or Dog.</li>
+</ul>
+</li>
+<li><strong>Regression:</strong> Predicts a numerical value.<ul>
+<li>Predicting house prices.</li>
+<li>Estimating monthly sales.</li>
+<li>Predicting temperature.</li>
+</ul>
+</li>
+</ol>
+<h3>B. Unsupervised Learning</h3>
+<p><strong>Definition:</strong></p>
+<p>Unsupervised Learning is a type of Machine Learning in which a model learns from unlabelled data and identifies patterns, similarities or groups without predefined target answers.</p>
+<p><strong>Example: Customer Segmentation</strong></p>
+<p>Imagine an online shopping company has information about 1,000 customers, including their shopping history and spending habits. The company has not assigned any customer groups.</p>
+<p>The model analyses the information and groups customers with similar shopping behaviour. Possible groups:</p>
+<ul>
+<li>High-spending customers.</li>
+<li>Regular customers.</li>
+<li>Occasional customers.</li>
+</ul>
+<p><strong>Common techniques:</strong></p>
+<ol>
+<li><strong>Clustering:</strong> Groups similar data points together.</li>
+<li><strong>Dimensionality Reduction:</strong> Reduces the number of features while retaining important information.</li>
+</ol>
+<h3>C. Reinforcement Learning</h3>
+<p><strong>Definition:</strong></p>
+<p>Reinforcement Learning is a type of Machine Learning in which an agent learns by interacting with an environment and receiving rewards or penalties for its actions. The agent gradually learns which actions are more beneficial.</p>
+<p><strong>Example: Teaching an AI to play a game</strong></p>
+<ol>
+<li>The AI performs an action.</li>
+<li>The game responds to that action.</li>
+<li>The AI receives a reward or penalty.</li>
+<li>It learns from the result.</li>
+<li>It tries to improve its future actions.</li>
+</ol>
+<p><strong>Important terminology:</strong></p>
+<ul>
+<li><strong>Agent:</strong> The learner or decision-making system.</li>
+<li><strong>Environment:</strong> The world in which the agent operates.</li>
+<li><strong>Action:</strong> What the agent does.</li>
+<li><strong>Reward:</strong> Feedback received after an action.</li>
+<li><strong>Policy:</strong> The strategy used by the agent to choose actions.</li>
+</ul>
+<h3>Difference between the three types</h3>
+<table>
+<thead>
+<tr>
+<th>Supervised</th>
+<th>Unsupervised</th>
+<th>Reinforcement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uses labelled data</td>
+<td>Uses unlabelled data</td>
+<td>Learns through interaction</td>
+</tr>
+<tr>
+<td>Correct answers are provided</td>
+<td>No predefined target answers</td>
+<td>Receives rewards or penalties</td>
+</tr>
+<tr>
+<td>Predicts known targets</td>
+<td>Discovers patterns and groups</td>
+<td>Improves its actions</td>
+</tr>
+<tr>
+<td>Spam detection</td>
+<td>Customer grouping</td>
+<td>Game-playing AI</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Easy way to remember:</strong></p>
+<ul>
+<li><strong>Supervised</strong> = Learning with answers.</li>
+<li><strong>Unsupervised</strong> = Learning without predefined answers.</li>
+<li><strong>Reinforcement</strong> = Learning through rewards and penalties.</li>
+</ul>
+<h2>5. What is Deep Learning (DL)?</h2>
+<p><strong>Definition:</strong></p>
+<p>Deep Learning is a subfield of Machine Learning that uses artificial neural networks with multiple layers to learn complex patterns from large amounts of data. It is inspired by some of the information-processing principles of the human brain.</p>
+<p><strong>What is a Neural Network?</strong></p>
+<p>A Neural Network is a computational model made up of interconnected units called artificial neurons. These neurons are organised into layers that process information.</p>
+<h3>Three main layers</h3>
+<ol>
+<li><strong>Input Layer:</strong> Receives the input data.</li>
+<li><strong>Hidden Layers:</strong> Process information and learn patterns.</li>
+<li><strong>Output Layer:</strong> Produces the result.</li>
+</ol>
+<p><strong>Example: Image Recognition</strong></p>
+<p>Imagine you give a computer thousands of pictures of cats and dogs. A Deep Learning model learns patterns from these pictures, such as shapes, textures and visual features.</p>
+<p>When you provide a new picture, the model can predict whether it contains a cat or a dog.</p>
+<p><strong>Applications of Deep Learning:</strong></p>
+<ul>
+<li>Face recognition.</li>
+<li>Speech recognition.</li>
+<li>Image classification.</li>
+<li>Language processing.</li>
+<li>Medical image analysis.</li>
+</ul>
+<h2>6. What is Generative Artificial Intelligence (GenAI)?</h2>
+<p><strong>Definition:</strong></p>
+<p>Generative AI is a category of AI systems that can generate new content, such as text, images, audio, video and computer code, based on patterns learned from training data.</p>
+<p>Unlike systems that only classify or predict, Generative AI can produce new outputs.</p>
+<p><strong>Examples:</strong></p>
+<ol>
+<li>ChatGPT generates text and code.</li>
+<li>Gemini can understand and generate content.</li>
+<li>Image-generation tools create images from text prompts.</li>
+<li>AI video tools generate videos.</li>
+<li>AI music tools generate audio.</li>
+</ol>
+<h3>How Generative AI works (simplified)</h3>
+<ol>
+<li>The model is trained using large amounts of data.</li>
+<li>It learns patterns and relationships within that data.</li>
+<li>A user provides a prompt.</li>
+<li>The model processes the prompt.</li>
+<li>It generates an output based on what it has learned.</li>
+</ol>
+<p><strong>Applications of Generative AI:</strong></p>
+<ul>
+<li>Content creation.</li>
+<li>Image generation.</li>
+<li>Video generation.</li>
+<li>Code generation.</li>
+<li>Chatbots.</li>
+<li>Document summarisation.</li>
+<li>Software development.</li>
+<li>Customer support.</li>
+</ul>
+<h2>7. What is a Large Language Model (LLM)?</h2>
+<p><strong>Definition:</strong></p>
+<p>A Large Language Model (LLM) is an AI model trained on large amounts of text data to understand and generate human-like language.</p>
+<p>LLMs are commonly used for answering questions, writing content, summarising documents, generating code and conversational applications.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>OpenAI GPT models.</li>
+<li>Google Gemini models.</li>
+<li>Anthropic Claude models.</li>
+</ul>
+<h3>How does an LLM work?</h3>
+<p>At a simplified level:</p>
+<ol>
+<li>The user provides a prompt.</li>
+<li>The text is converted into tokens.</li>
+<li>The model processes the tokens and context.</li>
+<li>It predicts likely next tokens.</li>
+<li>The model generates a response token by token.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<p>Prompt: <em>"Artificial Intelligence is..."</em></p>
+<p>The model uses the context and its learned patterns to generate a suitable continuation.</p>
+<blockquote>
+<p><strong>Important:</strong> An LLM does not think or understand exactly like a human. It processes information using mathematical patterns learned during training.</p>
+</blockquote>
+<h2>8. Important LLM Terminology</h2>
+<ol>
+<li><strong>Prompt:</strong> An instruction or input provided to an AI model to perform a task. Example: <em>"Explain Machine Learning in simple English."</em></li>
+<li><strong>Token:</strong> A small unit of text processed by a language model. A token can represent a word, part of a word or punctuation.</li>
+<li><strong>Context Window:</strong> The amount of information a model can process and consider within a particular interaction.</li>
+<li><strong>Hallucination:</strong> When an AI model generates information that sounds convincing but is incorrect, unsupported or fabricated.</li>
+<li><strong>Foundation Model:</strong> A large model trained on broad datasets that can be adapted for different tasks.</li>
+<li><strong>Multimodal AI:</strong> AI that can process or generate different types of information, such as text, images, audio and video.</li>
+</ol>
+<h2>9. Difference between AI, ML, Deep Learning and GenAI</h2>
 <div class="nest"><span>Artificial Intelligence</span><div class="nest"><span>Machine Learning</span><div class="nest"><span>Deep Learning</span><div class="nest gold"><span>Generative AI</span></div></div></div></div>
 
-<p>Every inner circle is a <em>part of</em> the one around it. Modern Generative AI is built with deep learning, which is a kind of machine learning, which is a kind of AI.</p>
-<h2>1. Artificial Intelligence (AI): the umbrella</h2>
-<p><strong>Any technology that lets computers do tasks that normally need human intelligence:</strong> understanding language, recognising images, making decisions, playing games.</p>
-<ul>
-<li>Old-school AI can be pure hand-written rules (e.g. a chess program following "if… then…" logic).</li>
-<li>Everything below is a <em>way</em> of building AI.</li>
-</ul>
-<h2>2. Machine Learning (ML): learning from data</h2>
-<p><strong>Instead of programmers writing every rule, the computer learns patterns from examples.</strong></p>
 <table>
 <thead>
 <tr>
-<th>Traditional software</th>
-<th>Machine learning</th>
+<th>Technology</th>
+<th>Meaning</th>
+<th>Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Developer writes the rules</td>
-<td>Model learns the rules from data</td>
+<td>Artificial Intelligence</td>
+<td>Broad field of intelligent computer systems</td>
+<td>Voice assistants</td>
 </tr>
 <tr>
-<td><code>if email contains "lottery" → spam</code></td>
-<td>Show it 100,000 spam / not-spam emails; it figures out the patterns</td>
+<td>Machine Learning</td>
+<td>Learns patterns from data</td>
+<td>Spam detection</td>
 </tr>
 <tr>
-<td>Breaks on cases nobody thought of</td>
-<td>Generalises to new, unseen cases</td>
+<td>Deep Learning</td>
+<td>Uses multi-layer neural networks</td>
+<td>Face recognition</td>
 </tr>
-</tbody>
-</table>
-<p>Typical jobs: <strong>predict</strong> a number, <strong>classify</strong> something, <strong>recommend</strong> an item.</p>
-<h2>3. Deep Learning (DL): neural networks</h2>
-<p><strong>A type of machine learning that uses neural networks: many layers of simple "neurons", loosely inspired by the brain.</strong></p>
-<ul>
-<li>Each layer learns slightly more abstract patterns (edges → shapes → faces).</li>
-<li>Needs lots of data and computing power (GPUs).</li>
-<li>Powers speech recognition, image recognition and, importantly, today's Generative AI.</li>
-</ul>
-<h2>4. Generative AI (GenAI): creating new content</h2>
-<p><strong>AI that creates brand-new content instead of only predicting or classifying.</strong></p>
-<p>It can generate: <strong>text</strong> (ChatGPT, Claude, Gemini) · <strong>images</strong> (Midjourney, DALL·E) · <strong>video</strong> · <strong>audio and music</strong> · <strong>code</strong>.</p>
-<p>Under the hood, large language models are trained on huge amounts of text and generate an answer <strong>one word-piece (token) at a time</strong>, each time predicting what should come next.</p>
-<h2>The everyday example</h2>
-<table>
-<thead>
 <tr>
-<th></th>
-<th>Netflix recommendations</th>
-<th>ChatGPT</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Type</td>
-<td>Machine learning</td>
 <td>Generative AI</td>
-</tr>
-<tr>
-<td>What it does</td>
-<td><strong>Predicts</strong> what you'll watch next</td>
-<td><strong>Creates</strong> a brand-new answer</td>
-</tr>
-<tr>
-<td>Output</td>
-<td>A ranked list of existing movies</td>
-<td>New text that didn't exist before</td>
+<td>Generates new content</td>
+<td>ChatGPT</td>
 </tr>
 </tbody>
 </table>
-<h2>Remember this</h2>
-<blockquote>
-<p><strong>Machine Learning predicts. Generative AI creates.</strong></p>
-</blockquote>
-<p>(Generative AI also learns patterns, but its job is to <em>produce</em> new content from them.)</p>
-<h2>Try it yourself (10 minutes)</h2>
-<ol>
-<li>Ask ChatGPT, Gemini and Claude the same question: <em>"Explain the difference between AI, machine learning, deep learning and generative AI to a 12-year-old."</em></li>
-<li>Compare the three answers. Which one is clearest? Did any of them get something wrong?</li>
-<li>Write your own 3-sentence explanation without looking.</li>
-</ol>
-<h2>Learn more (free)</h2>
+<p><strong>Important relationship:</strong></p>
 <ul>
-<li><a href="https://academy.openai.com/">OpenAI Academy</a>: AI foundations</li>
-<li><a href="https://learn.microsoft.com/en-us/training/modules/fundamentals-generative-ai/">Microsoft Learn: Generative AI fundamentals</a></li>
-<li><a href="https://grow.google/intl/en_in/ai-skills/">Google AI Skills</a></li>
-</ul><p style="margin-top:40px"><a class="btn ghost" href="../plan/index.html">See the full 90-day plan →</a>
+<li>Machine Learning is a subfield of Artificial Intelligence.</li>
+<li>Deep Learning is a subfield of Machine Learning.</li>
+<li>Modern Generative AI commonly uses Deep Learning, although Generative AI is not strictly a separate layer beneath Deep Learning.</li>
+</ul>
+<h2>10. Machine Learning vs Generative AI</h2>
+<table>
+<thead>
+<tr>
+<th>Machine Learning</th>
+<th>Generative AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Often learns to predict or classify</td>
+<td>Learns to generate new content</td>
+</tr>
+<tr>
+<td>Example: Predicting house prices</td>
+<td>Example: Generating an image</td>
+</tr>
+<tr>
+<td>Example: Detecting spam</td>
+<td>Example: Writing an email</td>
+</tr>
+<tr>
+<td>Uses trained statistical models</td>
+<td>Commonly uses deep learning foundation models</td>
+</tr>
+</tbody>
+</table>
+<h2>11. Real-world Applications of AI</h2>
+<ol>
+<li><strong>Banking:</strong> Detecting suspicious transactions.</li>
+<li><strong>Healthcare:</strong> Analysing medical images.</li>
+<li><strong>E-commerce:</strong> Recommending products.</li>
+<li><strong>Education:</strong> Personalised learning assistance.</li>
+<li><strong>Agriculture:</strong> Crop monitoring and disease detection.</li>
+<li><strong>Transportation:</strong> Traffic prediction.</li>
+<li><strong>Customer Support:</strong> Answering customer enquiries.</li>
+<li><strong>Software Development:</strong> Generating and explaining code.</li>
+</ol>
+<h2>12. Limitations of Generative AI</h2>
+<ol>
+<li><strong>Hallucinations:</strong> AI can generate incorrect information.</li>
+<li><strong>Bias:</strong> Models may reproduce biases present in training data.</li>
+<li><strong>Privacy:</strong> Sensitive information should not be entered into tools without checking their data policies.</li>
+<li><strong>Accuracy:</strong> AI-generated answers need verification.</li>
+<li><strong>Context:</strong> Models have limits on the amount of information they can process.</li>
+<li><strong>Reliability:</strong> AI-generated code and decisions need testing and human review.</li>
+</ol>
+<hr />
+<h2>Day 1: Final Revision</h2>
+<h3>Important definitions to remember</h3>
+<ul>
+<li><strong>AI:</strong> Enables machines to perform tasks that normally require human intelligence.</li>
+<li><strong>Machine Learning:</strong> Enables computers to learn patterns from data.</li>
+<li><strong>Deep Learning:</strong> Uses multi-layer neural networks to learn complex patterns.</li>
+<li><strong>Generative AI:</strong> Generates new content such as text, images, audio, video and code.</li>
+<li><strong>LLM:</strong> A large language model trained to process and generate language.</li>
+</ul>
+<h3>Important differences</h3>
+<ul>
+<li><strong>Traditional programming:</strong> Developers explicitly define rules.</li>
+<li><strong>Machine Learning:</strong> Algorithms learn patterns from data.</li>
+<li><strong>Supervised Learning:</strong> Uses labelled data.</li>
+<li><strong>Unsupervised Learning:</strong> Uses unlabelled data.</li>
+<li><strong>Reinforcement Learning:</strong> Learns through rewards and penalties.</li>
+<li><strong>Generative AI:</strong> Produces new content.</li>
+</ul>
+<h3>Day 1 practical assignment</h3>
+<ol>
+<li>Explain AI, ML, Deep Learning and GenAI in your own words.</li>
+<li>Explain the three types of Machine Learning.</li>
+<li>Draw the basic neural network architecture.</li>
+<li>Explain how an LLM generates a response.</li>
+<li>Compare ChatGPT, Gemini and Claude using the same five prompts.</li>
+<li>Write five applications of AI in business.</li>
+<li>Explain three limitations of Generative AI.</li>
+</ol>
+<h3>My Day 1 self-assessment</h3>
+<p>I should be able to:</p>
+<ul>
+<li>Define AI and its major concepts.</li>
+<li>Explain how Machine Learning works.</li>
+<li>Differentiate supervised, unsupervised and reinforcement learning.</li>
+<li>Explain the basics of Deep Learning.</li>
+<li>Explain what Generative AI does.</li>
+<li>Understand the basic working of LLMs.</li>
+<li>Identify real-world applications and limitations.</li>
+</ul>
+<hr />
+<p><strong>END OF DAY 1</strong></p>
+<p>My learning principle:</p>
+<blockquote>
+<p><strong>Understand → Write → Practise → Explain → Revise.</strong></p>
+</blockquote><p style="margin-top:40px"><a class="btn ghost" href="../plan/index.html">See the full 90-day plan →</a>
 <a class="btn" href="https://www.instagram.com/kingsmanexplains/">Follow for Day 2</a></p>
 <footer>Learning Gen AI &amp; automation in public, 90 days · <a href="https://www.instagram.com/kingsmanexplains/">@kingsmanexplains</a></footer>
 </div></body></html>
